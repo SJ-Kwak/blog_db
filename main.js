@@ -1,7 +1,8 @@
-const express=require("express");
-const mysql=require("mysql");
-const con=mysql.createConnection();
-const bodyParser=require("body-parser");
+const express=require('express');
+const mysql=require('mysql');
+const dbConfig=require('../config/db.js');
+const con=mysql.createConnection(dbConfig);
+const bodyParser=require('body-parser');
 
 const server=express();
 
